@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body{
+            /* position: relative; */
+            background-image: url(images/background.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: none;
+            /* position: absolute; */
+            /* right: 25%; */
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        td {
+            padding: 10px;
+            min-width: 30px;
+            border: 1px solid cornflowerblue;
+        }
+
+
+        tr:nth-child(1) {
+            text-align: center;
+            background-color: white;
+            color: cornflowerblue;
+        }
+        td:nth-child(4),td:nth-child(5),td:nth-child(1),td:nth-child(3){
+            text-align: center;
+        }
+        
+        h1{
+                text-align: center;
+                color: blue;
+        }
+        button {
+            padding: 8px 30px;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            background-color: white;
+            color: orangered;
+            box-shadow: inset 0 0 20px blue;
+            
+        }
+
+        button:hover {
+            color: blue;
+            box-shadow: inset 0 0 20px orange;
+        }
+
+        button:disabled {
+            color: darkgray;
+            box-shadow: inset 0 0 20px gray;
+        }
+        .nut1{
+            position: absolute;
+            top: 22%;
+            right: 25%;
+        }
+        .nut2{
+            position: absolute;
+            top: 22%;
+            right: 36%;
+        }
+    </style>
+</head>
+<body>
+    <h1>GIỎ HÀNG</h1>
+    <table border="bang">
+        <tr>
+            <td>THỨ TỰ</td>
+            <td> TÊN SẢN PHẨM</td>
+            <td>SỐ LƯỢNG</td>
+            <td>GIÁ</td>
+            <td>GIÁ ĐÃ GIẢM</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img src="images/2.jpg" alt="" width="30px">RX TITAN</td>
+            <td>1</td>
+            <td>2000$</td>
+            <td>2000$</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img src="images/sale item.jpg" alt="" width="30px">KRAKEN</td>
+            <td>1</td>
+            <td>1200$</td>
+            <td>1120$</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img src="images/hot item.jpg" alt="" width="30px">OMG!ULTIMATE</td>
+            <td>1</td>
+            <td>1500$</td>
+            <td>1500$</td>
+        </tr>
+        <tr>
+            <td colspan="2">tổng hàng</td>
+            <td style="text-align: center;">3</td>
+            <td>tổng tiền</td>
+            <td>4620$</td>
+        </tr>
+        
+    </table>
+    <div class="nut1">
+    <button type="submit">đặt hàng</button>
+    </div>
+    <div class="nut2">
+    <a href="SanPham.html"><button>tiếp tục mua hàng</button></a>
+</div>
+</body>
+</html>
